@@ -36,7 +36,7 @@ VERSION_REPO:=$(call qstrip,$(CONFIG_VERSION_REPO))
 VERSION_REPO:=$(if $(VERSION_REPO),$(VERSION_REPO),https://downloads.openwrt.org/releases/25.12-SNAPSHOT)
 
 VERSION_DIST:=$(call qstrip,$(CONFIG_VERSION_DIST))
-VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt [By Bzlzm @ $(shell date +%Y-%m-%d)])
+VERSION_DIST:=$(if $(VERSION_DIST),$(VERSION_DIST),OpenWrt [Bzlzm@$(shell date +%Y-%m-%d)])
 VERSION_DIST_SANITIZED:=$(call sanitize,$(VERSION_DIST))
 
 VERSION_MANUFACTURER:=$(call qstrip,$(CONFIG_VERSION_MANUFACTURER))
